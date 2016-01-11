@@ -19,9 +19,9 @@ class Parcel
 
     case speed
     when 2
-      speed_cost = 8
+      speed_cost = 800
     when 1
-      speed_cost = 15
+      speed_cost = 1500
     else
       speed_cost = 0
     end
