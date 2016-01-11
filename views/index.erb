@@ -1,0 +1,63 @@
+<h2>Welcome to the USPPS</h2>
+<h5>We'll ship your parcels in a jiffy (with white gloves).&#x2122;</h5>
+<form action="/parcel">
+  <div class="row">
+    <div class="form-group col-md-6">
+      <div class="form-group">
+        <label for="zip1">Ship from</label>
+        <input type="text" name="zip1" pattern="\d{5}-?(\d{4})?" placeholder="ZIP code" class="form-control">
+        <label for="zip2"> to </label>
+        <input type="text" name="zip2" pattern="\d{5}-?(\d{4})?" placeholder="ZIP code" class="form-control">
+      </div>
+      <label>Choose a shipping type</label>
+      <div class="radio">
+         <label>
+           <input type="radio" name="shipRadios" id="shipRegular" value="7">
+           Regular (7 days)
+         </label>
+      </div>
+      <div class="radio">
+         <label>
+           <input type="radio" name="shipRadios" id="shipTwoDay" value="2">
+           2-Day
+         </label>
+      </div>
+      <div class="radio">
+         <label>
+           <input type="radio" name="shipRadios" id="shipNextDay" value="1">
+           Next Day
+         </label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label>Package Dimensions (in.)</label>
+      <div class="form-inline">
+        <div class="form-group">
+          <input type="number" min="0" class="form-control" name="length" placeholder="Length">
+        </div>
+        <div class="form-group">
+          <input type="number" min="0" class="form-control" name="width" placeholder="Width">
+        </div>
+        <div class="form-group">
+          <input type="number" min="0" class="form-control" name="height" placeholder="Height">
+        </div>
+      </div>
+      <label>Package Weight</label>
+      <div class="form-inline">
+        <div class="input-group">
+          <input type="number" min="0" class="form-control" name="weightLbs" placeholder="#">
+          <span class="input-group-addon">lbs</span>
+        </div>
+        <div class="input-group">
+          <input type="number" min="0" class="form-control" name="weightOzs" placeholder="#">
+          <span class="input-group-addon">ozs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button type="Submit" class="btn btn-danger">Calculate</button>
+    </div>
+  </div>
+</form>
